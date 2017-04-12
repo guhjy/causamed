@@ -3,6 +3,25 @@ Title: Mediation in the causal inference framework
 Version: 0.1.0
 Authors@R: person("Antoine", "Baldassari", email = "baldassarian@gmail.com", role = c("aut", "cre"))
 Description: Implements mediation formulas from Tyler Vanderweele's 2015 book
+    Regression methods for continuous mediator/outcome (section 3.1.1)
+    IPTW-based method for scenario with exposure-induced M->Y confounding (section 5.3.1)
+    G-estimation based method for joint effect of multiple mediators (section 5.3.3)
+    Calculation of random interventional analogues to direct and indirect effects (section 5.4.2)
+    version 0.1.0 : Structural means models to deal with exposure-induced confounding of M->Y given a continuous exposure or mediator (section 5.3.5)
+    version 0.1.1 : Handling of mice objects to add to resampler (slow but more stable than pooling from few imputed datasets)
+
+To do (not much work)
+5. Structural means models to deal with exposure-induced confounding of M->Y given a continuous exposure or mediator (section 5.3.5)
+6. Handling of mice objects to add to resampler (slow but more stable than pooling from few imputed datasets)
+7. Extension of methods to categorical and continuous outcomes where not already the case
+8. Regression-based methods for multiple confounders
+9. Check random interventional analogue for categorical exposure case
+10. Add methods to summary() generic function
+
+To do (lots of work)
+10. Implementation of sensitivity analyses for regression-based methods
+11. More sensitivity analyses in settings where NDE/NIE not identified
+12. Handle non-parametric/semi-parametric approachs to propensity score estimation for weighting-based approaches 
 Depends:
     R (>= 3.2.4)
 License: MIT
